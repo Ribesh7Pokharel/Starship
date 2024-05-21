@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\ri19b\\Desktop\\UnityGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|C:\\Users\\ri19b\\Desktop\\UnityGame\\assets\\scripts\\itemaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itemaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|C:\\Users\\ri19b\\Desktop\\UnityGame\\assets\\scripts\\enemyship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|c:\\users\\ri19b\\desktop\\unitygame\\assets\\scripts\\wavespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\wavespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|c:\\users\\ri19b\\desktop\\unitygame\\assets\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|C:\\Users\\ri19b\\Desktop\\UnityGame\\assets\\scripts\\shipgamemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shipgamemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|C:\\Users\\ri19b\\Desktop\\UnityGame\\assets\\scripts\\playeractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playeractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|c:\\users\\ri19b\\desktop\\unitygame\\assets\\scripts\\shipgamemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shipgamemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|C:\\Users\\ri19b\\Desktop\\UnityGame\\assets\\scripts\\itemaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itemaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|C:\\Users\\ri19b\\Desktop\\UnityGame\\assets\\scripts\\pickupitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pickupitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|C:\\Users\\ri19b\\Desktop\\UnityGame\\assets\\scripts\\enemyship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}|Assembly-CSharp.csproj|C:\\Users\\ri19b\\Desktop\\UnityGame\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +42,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "WaveSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\ri19b\\Desktop\\UnityGame\\Assets\\Scripts\\WaveSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WaveSpawner.cs",
+              "ToolTip": "C:\\Users\\ri19b\\Desktop\\UnityGame\\Assets\\Scripts\\WaveSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WaveSpawner.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAGUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T13:49:16.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "C:\\Users\\ri19b\\Desktop\\UnityGame\\Assets\\Scripts\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemySpawner.cs",
+              "ToolTip": "C:\\Users\\ri19b\\Desktop\\UnityGame\\Assets\\Scripts\\EnemySpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemySpawner.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T13:07:09.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PlayerActions.cs",
               "DocumentMoniker": "C:\\Users\\ri19b\\Desktop\\UnityGame\\Assets\\Scripts\\PlayerActions.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerActions.cs",
@@ -51,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "EnemyShip.cs",
               "DocumentMoniker": "C:\\Users\\ri19b\\Desktop\\UnityGame\\Assets\\Scripts\\EnemyShip.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyShip.cs",
@@ -64,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\ri19b\\Desktop\\UnityGame\\Assets\\Scripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
@@ -76,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "PickupItem.cs",
               "DocumentMoniker": "C:\\Users\\ri19b\\Desktop\\UnityGame\\Assets\\Scripts\\PickupItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PickupItem.cs",
@@ -84,12 +118,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PickupItem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T00:51:48.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T00:51:48.625Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ShipGameMode.cs",
               "DocumentMoniker": "C:\\Users\\ri19b\\Desktop\\UnityGame\\Assets\\Scripts\\ShipGameMode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ShipGameMode.cs",
@@ -102,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "ItemAction.cs",
               "DocumentMoniker": "C:\\Users\\ri19b\\Desktop\\UnityGame\\Assets\\Scripts\\ItemAction.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ItemAction.cs",
@@ -110,8 +143,7 @@
               "RelativeToolTip": "Assets\\Scripts\\ItemAction.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T00:40:42.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T00:40:42.834Z"
             }
           ]
         }

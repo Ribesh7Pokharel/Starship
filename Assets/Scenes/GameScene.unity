@@ -1765,6 +1765,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545371660}
   m_CullTransparentMesh: 1
+--- !u!1 &1634467603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1634467605}
+  - component: {fileID: 1634467604}
+  m_Layer: 0
+  m_Name: WaveSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1634467604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634467603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8c7e445052ba14fb2281ad9208c6cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - name: 1st Wave
+    enemy: {fileID: 1108526491212029336, guid: 5e9262f994ed5414b98b25163b74d687, type: 3}
+    count: 5
+    rate: 1
+  timeBetweenWaves: 2
+  waveCountdown: 0
+--- !u!4 &1634467605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634467603}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -70.66246, y: -0.98949957, z: -242.96567}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1848703617 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3391467149483045489, guid: 742fffdd021a4874d8221e23437b05f8, type: 3}
@@ -2047,5 +2098,6 @@ SceneRoots:
   - {fileID: 1452023783}
   - {fileID: 812103234}
   - {fileID: 5709984646163707329}
-  - {fileID: 36658581}
+  - {fileID: 1634467605}
   - {fileID: 2091423321}
+  - {fileID: 36658581}

@@ -361,6 +361,7 @@
 "Assets/Scripts/PickupItem.cs"
 "Assets/Scripts/PlayerActions.cs"
 "Assets/Scripts/ShipGameMode.cs"
+"Assets/Scripts/WaveSpawner.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
