@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EnemyShip : MonoBehaviour
 {
+    public RuntimeAnimatorController explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +27,19 @@ public class EnemyShip : MonoBehaviour
     {
         if (collisionInfo.gameObject.CompareTag("Bullet"))
         {
-            Destroy(this.gameObject );
-            Destroy(collisionInfo.gameObject );
+            StartCoroutine(destroyActor(collisionInfo.gameObject));
         }
+    }
+
+    public IEnumerator destroyActor (GameObject bullet)
+    {
+        if (bullet != null)
+        {
+            Destroy(bullet);
+        }
+        GetComponent<Collider>().enabled = false;
+        GetComponent<Animator>().runtimeAnimatorController = explosion;
+        yield return new WaitForSeconds(2.0f);
+        Destroy(this.gameObject);
     }
 }

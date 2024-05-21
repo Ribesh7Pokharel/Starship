@@ -8,8 +8,11 @@ public class PlayerActions : MonoBehaviour
 
     public GameObject bulletTemplate;
     public float health = 100.0f;
-    // Start is called before the first frame update
-    void Start()
+    public ShipGameMode gameMode;
+ 
+
+	// Start is called before the first frame update
+	void Start()
     {
         
     }
@@ -18,10 +21,14 @@ public class PlayerActions : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)) 
-        { 
-            GameObject bullet = Instantiate(bulletTemplate, 
-                transform.position + new Vector3(0.0f,0.6f, 0.0f), 
-                transform.rotation);
+        {
+            if (!gameMode.gameOver)
+            {
+                GameObject bullet = Instantiate(bulletTemplate,
+                    transform.position + new Vector3(0.0f, 0.6f, 0.0f),
+                    transform.rotation);
+                GetComponent<AudioSource>().Play();
+            }
         }
         if (Input.GetKey (KeyCode.A)) 
         {
@@ -48,7 +55,15 @@ public class PlayerActions : MonoBehaviour
         {
             health = health - 10.0f;
             Debug.Log("Current Health: " + health);
-            Destroy(collisionInfo.gameObject);
+            EnemyShip enemy = collisionInfo.gameObject.GetComponent<EnemyShip>();
+            StartCoroutine(enemy.destroyActor(null) );
+
+            if (health <= 0.0f) 
+            {
+                gameMode.gameOver = true;
+                GetComponent<Collider>().enabled = false;
+                GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
 	}
 }
