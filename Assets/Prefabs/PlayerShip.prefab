@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 7082733641327667781}
   - component: {fileID: 6152871654390764109}
   - component: {fileID: 7236259486965406605}
+  - component: {fileID: 8360747291410917979}
+  - component: {fileID: 6593432716550028050}
   m_Layer: 0
   m_Name: PlayerShip
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,8 +123,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletTemplate: {fileID: 6457289900067540133, guid: 3d83cd1ed464eaa42894a5d3348a7d5d, type: 3}
-  health: 100
+  health: 50
   gameMode: {fileID: 0}
+  laserprefab: {fileID: 1746455630374299493, guid: c6d71dc244a92d9419b0d9fdd2830b3c, type: 3}
+  minX: -9.48
+  maxX: 9.46
+  minY: -1.83
+  maxY: 2.91
+  laserOffset: {x: 0, y: 1, z: 0}
+  canFire: 0
+  fireRate: 9
 --- !u!82 &7236259486965406605
 AudioSource:
   m_ObjectHideFlags: 0
@@ -219,3 +229,51 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &8360747291410917979
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7082733641327667780}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!135 &6593432716550028050
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7082733641327667780}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.475
+  m_Center: {x: 0, y: 0, z: 0}
