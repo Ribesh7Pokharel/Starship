@@ -8,13 +8,13 @@ public class BigEnemyShip : MonoBehaviour
 	public RuntimeAnimatorController explosion;
 	// Start is called before the first frame update
 	void Start()
-    {
-        
-    }
+	{
 
-    // Update is called once per frame
-    void Update()
-    {
+	}
+
+	// Update is called once per frame
+	void Update()
+	{
 		transform.position += new Vector3(0.0f, -0.005f, 0.0f);
 
 		if (transform.position.y < -5.0f)
@@ -40,7 +40,7 @@ public class BigEnemyShip : MonoBehaviour
 		{
 			Destroy(this.gameObject);
 			Destroy(collisionInfo.gameObject);
-			StartCoroutine (blow());
+			StartCoroutine(blow());
 		}
 	}
 

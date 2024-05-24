@@ -362,6 +362,7 @@
 "Assets/Scripts/EnemySpawner.cs"
 "Assets/Scripts/ItemAction.cs"
 "Assets/Scripts/Laser.cs"
+"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/PlayerActions.cs"
 "Assets/Scripts/ShipGameMode.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"

@@ -22,7 +22,6 @@ public class EnemyShip : MonoBehaviour
 	void Update()
 	{
 		transform.position += new Vector3(0.0f, -0.005f, 0.0f);
-		//LaserEnemyFire();
 		if (transform.position.y < -5.0f)
 		{
 			Destroy(this.gameObject);

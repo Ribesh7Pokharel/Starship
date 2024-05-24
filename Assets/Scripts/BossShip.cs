@@ -1,21 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class BossShip : MonoBehaviour
 {
-	public float health = 100.0f;
-	public Slider bossHealth;
+	public delegate void BossDestroyedHandler();
+	public event BossDestroyedHandler onBossDestroyed;
 
-	void Start()
-	{
-	}
+	public float health = 100.0f;
 
 	void Update()
 	{
-		bossHealth.value = health;
+		transform.position += new Vector3(0.0f, -0.005f, 0.0f);
+		if (transform.position.y < -5.0f)
+		{
+			Destroy(this.gameObject);
+		}
 	}
+
 
 	void OnCollisionStay(Collision collisionInfo)
 	{
@@ -38,6 +40,10 @@ public class BossShip : MonoBehaviour
 	{
 		if (health <= 0)
 		{
+			if (onBossDestroyed != null)
+			{
+				onBossDestroyed.Invoke();
+			}
 			Destroy(gameObject);
 		}
 	}

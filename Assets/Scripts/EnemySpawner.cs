@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -14,31 +17,103 @@ public class EnemySpawner : MonoBehaviour
 	private GameObject bigEnemyPrefab;
 
 	[SerializeField]
+	private GameObject bossPrefab;
+
+	[SerializeField]
 	private float bigEnemyInterval = 9.0f;
-	// Start is called before the first frame update
+
+	[SerializeField]
+	private float bossInterval = 50.0f;
+
+	public TextMeshProUGUI gameCompletionText;
+	public Button returnToMainMenuButton; // Add a reference to the button
+
+	private Coroutine enemyCoroutine;
+	private Coroutine bigEnemyCoroutine;
+	private Coroutine bossCoroutine;
+
 	void Start()
 	{
-		StartCoroutine(spwanEnemy(enemyInterval, enemyPrefab));
-		StartCoroutine(spwanEnemy(bigEnemyInterval, bigEnemyPrefab));
+		enemyCoroutine = StartCoroutine(spawnEnemy(enemyInterval, enemyPrefab));
+		bigEnemyCoroutine = StartCoroutine(spawnEnemy(bigEnemyInterval, bigEnemyPrefab));
+		bossCoroutine = StartCoroutine(spawnBoss(bossInterval));
+
+		returnToMainMenuButton.gameObject.SetActive(false); // Hide the button initially
 	}
 
-	// Update is called once per frame
-	void Update()
+	private IEnumerator spawnEnemy(float interval, GameObject enemy)
 	{
-
+		while (true)
+		{
+			yield return new WaitForSeconds(interval);
+			Instantiate(enemy, new Vector3(Random.Range(-7f, 7), Random.Range(7f, 7f), 0), Quaternion.identity);
+		}
 	}
 
-	private IEnumerator spwanEnemy(float interval, GameObject enemy)
+	private IEnumerator spawnBoss(float interval)
 	{
 		yield return new WaitForSeconds(interval);
-		GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-7f, 7), Random.Range(7f, 7f), 0), Quaternion.identity);
-		StartCoroutine(spwanEnemy(interval, enemy));
+		GameObject newBoss = Instantiate(bossPrefab, new Vector3(Random.Range(-7f, 7), Random.Range(7f, 7f), 0), Quaternion.identity);
+		BossShip bossShip = newBoss.GetComponent<BossShip>();
+		if (bossShip != null)
+		{
+			bossShip.onBossDestroyed += OnBossDestroyed;
+			Debug.Log("Boss spawned and event registered.");
+		}
 	}
 
-	private IEnumerator spwanBigEnemy(float interval, GameObject enemy)
+	private void OnBossDestroyed()
 	{
-		yield return new WaitForSeconds(interval);
-		GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-7f, 7), Random.Range(7f, 7f), 0), Quaternion.identity);
-		StartCoroutine(spwanEnemy(interval, enemy));
+		Debug.Log("Boss destroyed. Displaying message and stopping game.");
+		ShowGameCompletionMessage("Congratulations! You have defeated the boss.");
+
+		// Stop all coroutines
+		if (enemyCoroutine != null)
+		{
+			StopCoroutine(enemyCoroutine);
+		}
+		if (bigEnemyCoroutine != null)
+		{
+			StopCoroutine(bigEnemyCoroutine);
+		}
+		if (bossCoroutine != null)
+		{
+			StopCoroutine(bossCoroutine);
+		}
+
+		// Destroy all remaining enemies
+		DestroyAllEnemies();
+
+		// Stop all game activity
+		Time.timeScale = 0;
+
+		// Show the return to main menu button
+		returnToMainMenuButton.gameObject.SetActive(true);
+	}
+
+	private void DestroyAllEnemies()
+	{
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag("EnemyShip");
+		foreach (GameObject enemy in enemies)
+		{
+			Destroy(enemy);
+		}
+
+		GameObject[] bigEnemies = GameObject.FindGameObjectsWithTag("BigEnemy");
+		foreach (GameObject bigEnemy in bigEnemies)
+		{
+			Destroy(bigEnemy);
+		}
+	}
+
+	private void ShowGameCompletionMessage(string message)
+	{
+		gameCompletionText.text = message;
+	}
+
+	public void ReturnToMainMenu()
+	{
+		Time.timeScale = 1; // Reset time scale to normal
+		SceneManager.LoadScene("MainMenu");
 	}
 }

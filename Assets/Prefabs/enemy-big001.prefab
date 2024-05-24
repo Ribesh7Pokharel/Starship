@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1093112665704144933}
   - component: {fileID: 6114623604220402249}
   - component: {fileID: 1710869472108561225}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: enemy-big001
   m_TagString: BigEnemy
   m_Icon: {fileID: 0}

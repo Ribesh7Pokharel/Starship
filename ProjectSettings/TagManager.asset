@@ -8,15 +8,16 @@ TagManager:
   - Bullet
   - BigEnemy
   - Laser
+  - BossShip
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - bossShip
   - Water
   - UI
-  - 
-  - 
+  - enemyShip
+  - bigEnemyShip
   - 
   - 
   - 
